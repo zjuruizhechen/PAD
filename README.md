@@ -122,26 +122,16 @@ python measure_reward.py \
   --rm_gpu="cuda:0"
 ```
 
-## Results
-We conducted a performance comparison between ARGS and conventional decoding methods on Supervised Fine-Tuning (SFT) versions of Llama-7b and several OPT models. Remarkably, ARGS consistently outperformed the alternatives, including scenarios where the OPT model was trained using PPO.
-
-![](https://hackmd.io/_uploads/r1Q2ZFlzp.png)
-ARGS-Greedy Llama-7b performance
-
-![](https://hackmd.io/_uploads/HyVn-Yefa.png)
-ARGS-Greedy OPT Model performance
-
-
 
 ## Citation
 
 If you find this repository useful in your research, please consider citing:
 
 ```
-@inproceedings{khanov2024args,
-    title={ARGS: Alignment as Reward-Guided Search},
-    author={Maxim Khanov and Jirayu Burapacheep and Yixuan Li},
-    booktitle={Proceedings of the International Conference on Learning Representations},
-    year={2024}
+@inproceedings{chen2024pad,
+  title={Pad: Personalized alignment at decoding-time},
+  author={Chen, Ruizhe and Zhang, Xiaotian and Luo, Meng and Chai, Wenhao and Liu, Zuozhu},
+  booktitle={The Thirteenth International Conference on Learning Representations},
+  year={2024}
 }
 ```
