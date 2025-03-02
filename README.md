@@ -1,7 +1,7 @@
 # PAD: Personalized Alignment at Decoding-time
 
 
-This repository contains the official implementation of the paper PAD: Personalized Alignment at Decoding-time.
+This repository contains the official implementation of the paper PAD: Personalized Alignment at Decoding-time (https://openreview.net/pdf?id=e7AUJpP8bV).
 This paper presents Personalized Alignment at Decoding-time (PAD), a novel framework designed to align LLM outputs with diverse personalized preferences during the inference phase, eliminating the need for additional training. 
 
 This repository is built based on https://github.com/deeplearning-wisc/args.
