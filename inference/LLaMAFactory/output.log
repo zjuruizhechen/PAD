@@ -1,0 +1,219 @@
+nohup: ignoring input
+08/21/2024 01:20:23 - INFO - llamafactory.cli - Initializing distributed tasks at: 127.0.0.1:25715
+W0821 01:20:25.022307 140139071967872 torch/distributed/run.py:779] 
+W0821 01:20:25.022307 140139071967872 torch/distributed/run.py:779] *****************************************
+W0821 01:20:25.022307 140139071967872 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0821 01:20:25.022307 140139071967872 torch/distributed/run.py:779] *****************************************
+Traceback (most recent call last):
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 23, in <module>
+    launch()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 19, in launch
+    run_exp()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/train/tuner.py", line 45, in run_exp
+    model_args, data_args, training_args, finetuning_args, generating_args = get_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 156, in get_train_args
+    model_args, data_args, training_args, finetuning_args, generating_args = _parse_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 142, in _parse_train_args
+    return _parse_args(parser, args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 61, in _parse_args
+    return parser.parse_yaml_file(os.path.abspath(sys.argv[1]))
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/transformers/hf_argparser.py", line 423, in parse_yaml_file
+    outputs = self.parse_dict(yaml.safe_load(Path(yaml_file).read_text()), allow_extra_keys=allow_extra_keys)
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1266, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1252, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1120, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/mluo/ruizhec/LLaMA-Factory/examples/train_lora/llama3_lora_reward_PAD.yaml'
+Traceback (most recent call last):
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 23, in <module>
+    launch()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 19, in launch
+    run_exp()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/train/tuner.py", line 45, in run_exp
+    model_args, data_args, training_args, finetuning_args, generating_args = get_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 156, in get_train_args
+    model_args, data_args, training_args, finetuning_args, generating_args = _parse_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 142, in _parse_train_args
+    return _parse_args(parser, args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 61, in _parse_args
+    return parser.parse_yaml_file(os.path.abspath(sys.argv[1]))
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/transformers/hf_argparser.py", line 423, in parse_yaml_file
+    outputs = self.parse_dict(yaml.safe_load(Path(yaml_file).read_text()), allow_extra_keys=allow_extra_keys)
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1266, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1252, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1120, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/mluo/ruizhec/LLaMA-Factory/examples/train_lora/llama3_lora_reward_PAD.yaml'
+Traceback (most recent call last):
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 23, in <module>
+    launch()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 19, in launch
+    run_exp()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/train/tuner.py", line 45, in run_exp
+    model_args, data_args, training_args, finetuning_args, generating_args = get_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 156, in get_train_args
+    model_args, data_args, training_args, finetuning_args, generating_args = _parse_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 142, in _parse_train_args
+    return _parse_args(parser, args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 61, in _parse_args
+    return parser.parse_yaml_file(os.path.abspath(sys.argv[1]))
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/transformers/hf_argparser.py", line 423, in parse_yaml_file
+    outputs = self.parse_dict(yaml.safe_load(Path(yaml_file).read_text()), allow_extra_keys=allow_extra_keys)
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1266, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1252, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1120, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/mluo/ruizhec/LLaMA-Factory/examples/train_lora/llama3_lora_reward_PAD.yaml'
+Traceback (most recent call last):
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 23, in <module>
+    launch()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 19, in launch
+    run_exp()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/train/tuner.py", line 45, in run_exp
+    model_args, data_args, training_args, finetuning_args, generating_args = get_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 156, in get_train_args
+    model_args, data_args, training_args, finetuning_args, generating_args = _parse_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 142, in _parse_train_args
+    return _parse_args(parser, args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 61, in _parse_args
+    return parser.parse_yaml_file(os.path.abspath(sys.argv[1]))
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/transformers/hf_argparser.py", line 423, in parse_yaml_file
+    outputs = self.parse_dict(yaml.safe_load(Path(yaml_file).read_text()), allow_extra_keys=allow_extra_keys)
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1266, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1252, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1120, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/mluo/ruizhec/LLaMA-Factory/examples/train_lora/llama3_lora_reward_PAD.yaml'
+Traceback (most recent call last):
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 23, in <module>
+    launch()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 19, in launch
+    run_exp()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/train/tuner.py", line 45, in run_exp
+    model_args, data_args, training_args, finetuning_args, generating_args = get_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 156, in get_train_args
+    model_args, data_args, training_args, finetuning_args, generating_args = _parse_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 142, in _parse_train_args
+    return _parse_args(parser, args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 61, in _parse_args
+    return parser.parse_yaml_file(os.path.abspath(sys.argv[1]))
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/transformers/hf_argparser.py", line 423, in parse_yaml_file
+    outputs = self.parse_dict(yaml.safe_load(Path(yaml_file).read_text()), allow_extra_keys=allow_extra_keys)
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1266, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1252, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1120, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/mluo/ruizhec/LLaMA-Factory/examples/train_lora/llama3_lora_reward_PAD.yaml'
+Traceback (most recent call last):
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 23, in <module>
+    launch()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 19, in launch
+    run_exp()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/train/tuner.py", line 45, in run_exp
+    model_args, data_args, training_args, finetuning_args, generating_args = get_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 156, in get_train_args
+    model_args, data_args, training_args, finetuning_args, generating_args = _parse_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 142, in _parse_train_args
+    return _parse_args(parser, args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 61, in _parse_args
+    return parser.parse_yaml_file(os.path.abspath(sys.argv[1]))
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/transformers/hf_argparser.py", line 423, in parse_yaml_file
+    outputs = self.parse_dict(yaml.safe_load(Path(yaml_file).read_text()), allow_extra_keys=allow_extra_keys)
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1266, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1252, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1120, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/mluo/ruizhec/LLaMA-Factory/examples/train_lora/llama3_lora_reward_PAD.yaml'
+Traceback (most recent call last):
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 23, in <module>
+    launch()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 19, in launch
+    run_exp()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/train/tuner.py", line 45, in run_exp
+    model_args, data_args, training_args, finetuning_args, generating_args = get_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 156, in get_train_args
+    model_args, data_args, training_args, finetuning_args, generating_args = _parse_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 142, in _parse_train_args
+    return _parse_args(parser, args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 61, in _parse_args
+    return parser.parse_yaml_file(os.path.abspath(sys.argv[1]))
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/transformers/hf_argparser.py", line 423, in parse_yaml_file
+    outputs = self.parse_dict(yaml.safe_load(Path(yaml_file).read_text()), allow_extra_keys=allow_extra_keys)
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1266, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1252, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1120, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/mluo/ruizhec/LLaMA-Factory/examples/train_lora/llama3_lora_reward_PAD.yaml'
+Traceback (most recent call last):
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 23, in <module>
+    launch()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py", line 19, in launch
+    run_exp()
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/train/tuner.py", line 45, in run_exp
+    model_args, data_args, training_args, finetuning_args, generating_args = get_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 156, in get_train_args
+    model_args, data_args, training_args, finetuning_args, generating_args = _parse_train_args(args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 142, in _parse_train_args
+    return _parse_args(parser, args)
+  File "/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/hparams/parser.py", line 61, in _parse_args
+    return parser.parse_yaml_file(os.path.abspath(sys.argv[1]))
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/transformers/hf_argparser.py", line 423, in parse_yaml_file
+    outputs = self.parse_dict(yaml.safe_load(Path(yaml_file).read_text()), allow_extra_keys=allow_extra_keys)
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1266, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1252, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/pathlib.py", line 1120, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/mluo/ruizhec/LLaMA-Factory/examples/train_lora/llama3_lora_reward_PAD.yaml'
+W0821 01:20:34.494771 140139071967872 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 3229749 closing signal SIGTERM
+W0821 01:20:34.495089 140139071967872 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 3229750 closing signal SIGTERM
+W0821 01:20:34.495149 140139071967872 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 3229751 closing signal SIGTERM
+W0821 01:20:34.495200 140139071967872 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 3229752 closing signal SIGTERM
+W0821 01:20:34.495247 140139071967872 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 3229753 closing signal SIGTERM
+W0821 01:20:34.496008 140139071967872 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 3229755 closing signal SIGTERM
+W0821 01:20:34.496051 140139071967872 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 3229756 closing signal SIGTERM
+E0821 01:20:34.760470 140139071967872 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 5 (pid: 3229754) of binary: /home/mluo/miniconda3/envs/PAD/bin/python
+Traceback (most recent call last):
+  File "/home/mluo/miniconda3/envs/PAD/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/mluo/miniconda3/envs/PAD/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/home/mluo/ruizhec/LLaMA-Factory-PAD/src/llamafactory/launcher.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-08-21_01:20:34
+  host      : 9e720be470b2
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3229754)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
