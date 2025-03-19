@@ -16,7 +16,7 @@ git clone https://github.com/deeplearning-wisc/args.git
 conda create -n PAD python=3.10 -y
 conda activate PAD
 
-cd PAD
+cd args
 pip -r requirements.txt
 ```
 We recommend the following versions for the main packages:
